@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<title>Teszt: Gráfok</title>
+<script type="text/javascript" src="../js/sylvester.js"></script>
+<script type="text/javascript" src="../js/raphael-min.js"></script>
+<script type="text/javascript" src="../js/dracula_graffle.js"></script>
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../js/dracula_graph.js"></script>
+<script type="text/javascript" src="../js/graph_control.js"></script>
+</head>
+<body bgcolor="#AEFDA4">
+<div class="wrapper">
+<a name="top"></a> 
+<p align=right><font size=-1>
+Készült: 2014.07.03.
+</font></p>
+
+<center><h2>
+Gráfok</h2></center>
+
+<noscript><p class="Warning">
+Sajnálom. Az oldal használatához Javascript futását engedélyezni kell. 
+A legtöbb böngészőben engedélyezni lehet egy dialógusablakban, ami valahol a menüsor alatt ugrik fel. 
+Internet Explorer 9+ használata esetén az oldal alján lehet látni az engedélyező ablakot.
+</p>
+</noscript>
+
+<div><b>Használati utasítás:</b>
+<ol>
+<li> Csak válaszd ki a helyes megoldást. </li>
+<li> Minden megoldás 1 pontot ér. </li>
+<li> A teszt csak saját használatra, önálló feladatmegoldásra van kitalálva.</li>
+<li> Az elért eredmények nem tárolódnak, és nincs is továbbküldve senkinek. </li>
+</ol>
+</div>
+
+<hr>
+
+<form name="formzGrzfok" action="">
+
+1. Egy gráfban <span id="vertex">4</span> csúcs van. Az egyes csúcsokból <span id="degrees">3; 2; 2; 1</span> él indul. Hány éle van a gráfnak?
+<div id="task1">
+<div class="answer"><input type="radio" name="quest1" id="quest01a" onClick="stuff[1]=1; answered[1]=1"><label for="quest01a"><span id="quest1a">8</span></label></div>
+<div class="answer"><input type="radio" name="quest1" id="quest01b" onClick="stuff[1]=0; answered[1]=1"><label for="quest01b"><span id="quest1b">4</span></label></div>
+<div class="answer"><input type="radio" name="quest1" id="quest01c" onClick="stuff[1]=0; answered[1]=1"><label for="quest01c"><span id="quest1c">2</span></label></div>
+<div class="answer"><input type="radio" name="quest1" id="quest01d" onClick="stuff[1]=0; answered[1]=1"><label for="quest01d"><span id="quest1d">1</span></label></div>
+<div class="answer leftFloat"><br /><input type="radio" name="quest1" id="quest01n" checked onClick="stuff[1]=0; answered[1]=0"><label for="quest01n">Nincs válasz</label></div>
+</div>
+<br/>
+2. Egy <span id="vertex2">5</span> pontú gráf csúcsainak fokszáma rendre: <span id="degrees2">3; 2; 2; 2; 1</span>. Válassza ki az alábbiak közül a lehetséges gráfot!<br/>
+<div id="task2">
+<div class="answer"><input class="pushup" type="radio" name="quest2" id="quest02a" onClick="stuff[2]=1; answered[2]=1">&nbsp;<label for="quest02a"><span id="quest2a"></span></label></div>
+<div class="answer"><input class="pushup" type="radio" name="quest2" id="quest02b" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02b"><span id="quest2b"></span></label></div>
+<div class="answer"><input class="pushup" type="radio" name="quest2" id="quest02c" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02c"><span id="quest2c"></span></label></div>
+<div class="answer"><input class="pushup" type="radio" name="quest2" id="quest02d" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02d"><span id="quest2d"></span></label></div>
+<div class="answer"><br /><input type="radio" name="quest2" id="quest02n" checked onClick="stuff[2]=0; answered[2]=0"><label for="quest02n">Nincs válasz</label></div>
+</div>
+<br/>
+3. Egy <span id="vertex3">7</span> tagú társaságban mindenki mindenkivel kezet fog. Hány kézfogás történt?<br/>
+<div id="task3">
+<div class="answer"><input type="radio" name="quest3" id="quest03a" onClick="stuff[3]=1; answered[3]=1">&nbsp;<label for="quest03a"><span id="quest3a">15</span></label></div>
+<div class="answer"><input type="radio" name="quest3" id="quest03b" onClick="stuff[3]=0; answered[3]=1">&nbsp;<label for="quest03b"><span id="quest3b">30</span></label></div>
+<div class="answer"><input type="radio" name="quest3" id="quest03c" onClick="stuff[3]=0; answered[3]=1">&nbsp;<label for="quest03c"><span id="quest3c">7</span></label></div>
+<div class="answer"><input type="radio" name="quest3" id="quest03d" onClick="stuff[3]=0; answered[3]=1">&nbsp;<label for="quest03d"><span id="quest3d">14</span></label></div>
+<div class="answer leftFloat"><br /><input type="radio" name="quest3" id="quest03n" checked onClick="stuff[3]=0; answered[3]=0"><label for="quest03n">Nincs válasz</label></div>
+</div>
+<br/>
+4. Az iskolák közötti labdarúgóbajnokságra jelentkezett <span id="vertex4">6</span> csapat között lejátszott mérkőzéseket szemlélteti az alábbi ábra. 
+Hány mérkőzés van még hátra, ha minden csapat minden csapattal egy mérkőzést játszik a bajnokságban?<br/>
+<span id="image4"></span>
+<br/>
+<div id="task4">
+<div class="answer"><input type="radio" name="quest4" id="quest04a" onClick="stuff[4]=1; answered[4]=1">&nbsp;<label for="quest04a"><span id="quest4a">15</span></label></div>
+<div class="answer"><input type="radio" name="quest4" id="quest04b" onClick="stuff[4]=0; answered[4]=1">&nbsp;<label for="quest04b"><span id="quest4b">30</span></label></div>
+<div class="answer"><input type="radio" name="quest4" id="quest04c" onClick="stuff[4]=0; answered[4]=1">&nbsp;<label for="quest04c"><span id="quest4c">7</span></label></div>
+<div class="answer"><input type="radio" name="quest4" id="quest04d" onClick="stuff[4]=0; answered[4]=1">&nbsp;<label for="quest04d"><span id="quest4d">14</span></label></div>
+<div class="answer leftFloat"><br /><input type="radio" name="quest4" id="quest04n" checked onClick="stuff[4]=0; answered[4]=0"><label for="quest04n">Nincs válasz</label></div>
+</div>
+<br/>
+5. Válassza ki azt a gráfot az alábbiak közül, melynek <span id="vertex5">5</span> csúcsa és <span id="line5">5</span> éle van, továbbá legalább az egyik csúcsának a fokszáma <span id="degree5">3</span>.<br/>
+<div id="task5">
+<div class="answer"><input class="pushup" type="radio" name="quest5" id="quest05a" onClick="stuff[5]=1; answered[5]=1">&nbsp;<label for="quest05a"><span id="quest5a"></span></label></div>
+<div class="answer"><input class="pushup" type="radio" name="quest5" id="quest05b" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05b"><span id="quest5b"></span></label></div>
+<div class="answer"><input class="pushup" type="radio" name="quest5" id="quest05c" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05c"><span id="quest5c"></span></label></div>
+<div class="answer"><input class="pushup" type="radio" name="quest5" id="quest05d" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05d"><span id="quest5d"></span></label></div>
+<div class="answer leftFloat"><br /><input type="radio" name="quest5" id="quest05n" checked onClick="stuff[5]=0; answered[5]=0"><label for="quest05n">Nincs válasz</label></div>
+</div>
+<br/>
+
+
+
+<br clear=all>
+
+<input type=button name=processor value="Válaszok feldolgozása" onClick="processqzGrzfok()">&nbsp;<input type=reset value="Válaszok törlése" onClick="killall()"> &nbsp;
+
+<input type=text name="grade" value="Semmi!" size=25 onFocus="blur()"> &nbsp;
+A 2 pontból elértél:
+<input type=text name="score" value="Nukut!" size=10 onFocus="blur()">
+<br></form>
+
+<p class="toTop">
+<a href="#top">Vissza a tetejére.</a></p>
+<hr>
+<!-- You can edit this acknowledgement out if you like. -->
+<p class="toTop">
+A feladatsor alapötletét egy szöveges fájlból <br/>
+tesztkérdéseket generáló honlap adta:<br/>
+<a href="http://anthro.ucsd.edu/~dkjordan/resources/quizzes/quizzes.html">
+Think Again Quiz Maker</a> <br/>
+</p>
+ <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+  </p>
+</div>
+
+<script type="text/javascript">TaskSet();</script>
+</body>
+</html>
+

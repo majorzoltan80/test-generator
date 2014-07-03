@@ -1,0 +1,48 @@
+body {
+    margin-left:0cm;
+    margin-top:0in;
+    margin-right:0in;
+    margin-bottom:0in;
+    font-size:14pt;
+    padding: 10px 10px 10px 10px;
+    max-width:9in;
+    margin:auto;
+	/*background-color:#AEFDA4;*/
+}
+h1 {
+    font-size:20pt;
+}
+h2 {
+    font-size:18pt;
+	font-color:#922449;
+}
+h3 {
+    font-size:16pt;
+}
+.pushup {
+    position: relative;
+    top: -100px;
+}
+.wrapper {
+    background-color:#FFFFEB;
+    width:800px;
+    padding: 5px;
+}
+.answer {
+	display:inline-table;
+	margin-left:20px;
+}
+
+.leftFloat{
+	/*float:left;*/
+	display:block;
+}
+
+.toTop{
+	text-align: right;
+	font-size: 12px;
+}
+
+.Warning{
+	color:red;
+}
