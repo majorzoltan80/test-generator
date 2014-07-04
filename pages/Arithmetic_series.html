@@ -4,23 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="robots" content="noindex">
 <link rel="stylesheet" type="text/css" href="../css/common.css">
-<title>Teszt: Gráfok</title>
-<script type="text/javascript" src="../js/sylvester.js"></script>
+<title>Teszt: Számtani sorozatok</title>
+<!--script type="text/javascript" src="../js/sylvester.js"></script>
 <script type="text/javascript" src="../js/raphael-min.js"></script>
 <script type="text/javascript" src="../js/dracula_graffle.js"></script>
 <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="../js/dracula_graph.js"></script>
-<script type="text/javascript" src="../js/graph_control.js"></script>
+<script type="text/javascript" src="../js/dracula_graph.js"></script-->
+<script type="text/javascript" src="../js/arithmetic_series_control.js"></script>
 </head>
 <body bgcolor="#AEFDA4">
 <div class="wrapper">
 <a name="top"></a> 
 <p align=right><font size=-1>
-Készült: 2014.07.03.
+Készült: 2014.07.04.
 </font></p>
 
-<center><h2>
-Gráfok</h2></center>
+<h2>
+Számtani sorozatok</h2>
 
 <noscript><p class="Warning">
 Sajnálom. Az oldal használatához Javascript futását engedélyezni kell. 
@@ -42,8 +42,8 @@ Internet Explorer 9+ használata esetén az oldal alján lehet látni az engedé
 
 <form name="formzGrzfok" action="">
 
-1. Egy gráfban <span id="vertex">4</span> csúcs van. Az egyes csúcsokból <span id="degrees">3; 2; 2; 1</span> él indul. Hány éle van a gráfnak?
-<div id="task1">
+1. Egy számtani sorozat első tagja <span id="task6_a1">-8</span>, <span id="task6_d_Label">differenciája</script> <span id="task6_d">0,5</span>. Mekkora a sorozat <span id="task6_an">5</span>. tagja?
+<div id="task6">
 <div class="answer"><input type="radio" name="quest1" id="quest01a" onClick="stuff[1]=1; answered[1]=1"><label for="quest01a"><span id="quest1a">8</span></label></div>
 <div class="answer"><input type="radio" name="quest1" id="quest01b" onClick="stuff[1]=0; answered[1]=1"><label for="quest01b"><span id="quest1b">4</span></label></div>
 <div class="answer"><input type="radio" name="quest1" id="quest01c" onClick="stuff[1]=0; answered[1]=1"><label for="quest01c"><span id="quest1c">2</span></label></div>
@@ -51,17 +51,17 @@ Internet Explorer 9+ használata esetén az oldal alján lehet látni az engedé
 <div class="answer leftFloat"><br /><input type="radio" name="quest1" id="quest01n" checked onClick="stuff[1]=0; answered[1]=0"><label for="quest01n">Nincs válasz</label></div>
 </div>
 <br/>
-2. Egy <span id="vertex2">5</span> pontú gráf csúcsainak fokszáma rendre: <span id="degrees2">3; 2; 2; 2; 1</span>. Válassza ki az alábbiak közül a lehetséges gráfot!<br/>
-<div id="task2">
-<div class="answer"><input class="pushup" type="radio" name="quest2" id="quest02a" onClick="stuff[2]=1; answered[2]=1">&nbsp;<label for="quest02a"><span id="quest2a"></span></label></div>
-<div class="answer"><input class="pushup" type="radio" name="quest2" id="quest02b" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02b"><span id="quest2b"></span></label></div>
-<div class="answer"><input class="pushup" type="radio" name="quest2" id="quest02c" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02c"><span id="quest2c"></span></label></div>
-<div class="answer"><input class="pushup" type="radio" name="quest2" id="quest02d" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02d"><span id="quest2d"></span></label></div>
+2. Egy számtani sorozat második tagja <span id="task7_a2">17</span>, harmadik tagja <span id="task7_a2">21</span>. Mekkora az első <span id="task7_sn">150</span> tag összege?<br/>
+<div id="task7">
+<div class="answer"><input type="radio" name="quest2" id="quest02a" onClick="stuff[2]=1; answered[2]=1">&nbsp;<label for="quest02a"><span id="quest2a"></span></label></div>
+<div class="answer"><input type="radio" name="quest2" id="quest02b" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02b"><span id="quest2b"></span></label></div>
+<div class="answer"><input type="radio" name="quest2" id="quest02c" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02c"><span id="quest2c"></span></label></div>
+<div class="answer"><input type="radio" name="quest2" id="quest02d" onClick="stuff[2]=0; answered[2]=1">&nbsp;<label for="quest02d"><span id="quest2d"></span></label></div>
 <div class="answer"><br /><input type="radio" name="quest2" id="quest02n" checked onClick="stuff[2]=0; answered[2]=0"><label for="quest02n">Nincs válasz</label></div>
 </div>
 <br/>
 3. Egy <span id="vertex3">7</span> tagú társaságban mindenki mindenkivel kezet fog. Hány kézfogás történt?<br/>
-<div id="task3">
+<div id="task8">
 <div class="answer"><input type="radio" name="quest3" id="quest03a" onClick="stuff[3]=1; answered[3]=1">&nbsp;<label for="quest03a"><span id="quest3a">15</span></label></div>
 <div class="answer"><input type="radio" name="quest3" id="quest03b" onClick="stuff[3]=0; answered[3]=1">&nbsp;<label for="quest03b"><span id="quest3b">30</span></label></div>
 <div class="answer"><input type="radio" name="quest3" id="quest03c" onClick="stuff[3]=0; answered[3]=1">&nbsp;<label for="quest03c"><span id="quest3c">7</span></label></div>
@@ -73,7 +73,7 @@ Internet Explorer 9+ használata esetén az oldal alján lehet látni az engedé
 Hány mérkőzés van még hátra, ha minden csapat minden csapattal egy mérkőzést játszik a bajnokságban?<br/>
 <span id="image4"></span>
 <br/>
-<div id="task4">
+<div id="task9">
 <div class="answer"><input type="radio" name="quest4" id="quest04a" onClick="stuff[4]=1; answered[4]=1">&nbsp;<label for="quest04a"><span id="quest4a">15</span></label></div>
 <div class="answer"><input type="radio" name="quest4" id="quest04b" onClick="stuff[4]=0; answered[4]=1">&nbsp;<label for="quest04b"><span id="quest4b">30</span></label></div>
 <div class="answer"><input type="radio" name="quest4" id="quest04c" onClick="stuff[4]=0; answered[4]=1">&nbsp;<label for="quest04c"><span id="quest4c">7</span></label></div>
@@ -82,11 +82,11 @@ Hány mérkőzés van még hátra, ha minden csapat minden csapattal egy mérkő
 </div>
 <br/>
 5. Válassza ki azt a gráfot az alábbiak közül, melynek <span id="vertex5">5</span> csúcsa és <span id="line5">5</span> éle van, továbbá legalább az egyik csúcsának a fokszáma <span id="degree5">3</span>.<br/>
-<div id="task5">
-<div class="answer"><input class="pushup" type="radio" name="quest5" id="quest05a" onClick="stuff[5]=1; answered[5]=1">&nbsp;<label for="quest05a"><span id="quest5a"></span></label></div>
-<div class="answer"><input class="pushup" type="radio" name="quest5" id="quest05b" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05b"><span id="quest5b"></span></label></div>
-<div class="answer"><input class="pushup" type="radio" name="quest5" id="quest05c" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05c"><span id="quest5c"></span></label></div>
-<div class="answer"><input class="pushup" type="radio" name="quest5" id="quest05d" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05d"><span id="quest5d"></span></label></div>
+<div id="task10">
+<div class="answer"><input type="radio" name="quest5" id="quest05a" onClick="stuff[5]=1; answered[5]=1">&nbsp;<label for="quest05a"><span id="quest5a"></span></label></div>
+<div class="answer"><input type="radio" name="quest5" id="quest05b" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05b"><span id="quest5b"></span></label></div>
+<div class="answer"><input type="radio" name="quest5" id="quest05c" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05c"><span id="quest5c"></span></label></div>
+<div class="answer"><input type="radio" name="quest5" id="quest05d" onClick="stuff[5]=0; answered[5]=1">&nbsp;<label for="quest05d"><span id="quest5d"></span></label></div>
 <div class="answer leftFloat"><br /><input type="radio" name="quest5" id="quest05n" checked onClick="stuff[5]=0; answered[5]=0"><label for="quest05n">Nincs válasz</label></div>
 </div>
 <br/>
@@ -98,7 +98,7 @@ Hány mérkőzés van még hátra, ha minden csapat minden csapattal egy mérkő
 <input type=button name=processor value="Válaszok feldolgozása" onClick="processqzGrzfok()">&nbsp;<input type=reset value="Válaszok törlése" onClick="killall()"> &nbsp;
 
 <input type=text name="grade" value="Semmi!" size=25 onFocus="blur()"> &nbsp;
-A <span id="maxpoints">5</span> pontból elértél:
+A <span id="maxpoints">2</span> pontból elértél:
 <input type=text name="score" value="Nukut!" size=10 onFocus="blur()">
 <br></form>
 
