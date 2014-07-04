@@ -1,8 +1,9 @@
-var stuff = new Array(51)
+var numberOfQuestions = 5;
+var stuff = new Array(numberOfQuestions)
 // maximum number of questions
-var answered = new Array(51)
+var answered = new Array(numberOfQuestions)
 // processing inhibitor for guessers
-for (var i = 0; i <= 50; i++) {
+for (var i = 0; i <= numberOfQuestions; i++) {
     stuff[i] = 0;
     answered[i] = 0
 }
@@ -24,16 +25,17 @@ function createGraph(vertexnum, linenum) {
         for (i = j + 1; i <= vertexnum; i++) {
             if (linenum2 > 0) {
                 graphx.elements[i - 1][j - 1] = 1;
+				graphx.elements[j - 1][i - 1] = 1;
                 linenum2--;
             }
         }
     }
 	//set matrix to be symmetric
-    for (i = 1; i <= vertexnum; i++) {
+    /*for (i = 1; i <= vertexnum; i++) {
         for (j = i + 1; j <= vertexnum; j++) {
             graphx.elements[i - 1][j - 1] = graphx.e(j, i);
         }
-    }
+    }*/
     return graphx;
 }
 //returns the degrees of the graph nodes as an array
@@ -108,6 +110,10 @@ function createGraphForShow(adjacencyMatrix){
 }
 
 function TaskSet() {
+//set the number of questions
+document.getElementById('maxpoints').innerHTML = numberOfQuestions;
+
+
 //TASK1
     // create the first graph task
     var vertexnum = randomMinMax(4, 8);
@@ -236,9 +242,10 @@ function TaskSet() {
 
 //TASK 5
 	vertexnum  = randomMinMax(5,8);
-	//log(vertexnum);
-	maxlinenum = vertexnum * (vertexnum - 1) / 2;
 	linenum  = randomMinMax(vertexnum-1, vertexnum+3);
+	// vertexnum  = 6;
+	// linenum  = 5;
+
 	pointdegree = randomMinMax(3,vertexnum-1);
     //create the adjacency matrix
 	var linenum2 = linenum;
@@ -269,7 +276,7 @@ function TaskSet() {
             graphx.elements[i - 1][j - 1] = graphx.e(j, i);
         }
     }
-    //draw the graph
+    //draw the good graph
 	g = new Graph();
     g = createGraphForShow(graphx);
 	var renderer;
@@ -282,9 +289,56 @@ function TaskSet() {
 	document.getElementById('line5').innerHTML = linenum;
 	document.getElementById('degree5').innerHTML = pointdegree;
 	
+	//draw the remaining graph
+    gr = createGraph(vertexnum + 1, linenum);
+    g = new Graph();
+    g = createGraphForShow(gr);	
+	layouter = new Graph.Layout.Symmetric(g);
+	renderer = new Graph.Renderer.Raphael('quest5b', g, width, height);	
 
+    gr = createGraph(vertexnum, linenum+1);
+    g = new Graph();
+    g = createGraphForShow(gr);	
+	layouter = new Graph.Layout.Symmetric(g);
+	renderer = new Graph.Renderer.Raphael('quest5c', g, width, height);	
 
+	gr = new Matrix.Zero(vertexnum, vertexnum);
+	linenum2 = linenum;
+	/*for (j = 1; j <= vertexnum; j++) {
+        for (i = j + 1; i <= j + 2; i++) {
+            if (i <= vertexnum){
+				if (linenum2 > 0) {
+					gr.elements[i - 1][j - 1] = 1;
+					gr.elements[j - 1][i - 1] = 1;
+					linenum2--;
+				}
+			}	
+        }	
+    }*/
+	for (j = 1; j < vertexnum; j++) {
+		if (linenum2 > 0) {
+			gr.elements[j][j - 1] = 1;
+			gr.elements[j - 1][j] = 1;
+			linenum2--;
+		}	
+    }
 	
+	if (linenum2>0){
+		gr.elements[0][vertexnum-1] = 1;
+		gr.elements[vertexnum-1][0] = 1;
+		linenum--;
+	}
+	
+	for (j = 1; j < vertexnum-1; j++) {
+		if (linenum2 > 0) {
+			gr.elements[j+1][j - 1] = 1;
+			gr.elements[j - 1][j+1] = 1;
+			linenum2--;
+		}	
+	}
+	g = createGraphForShow(gr);
+	layouter = new Graph.Layout.Symmetric(g);
+	renderer = new Graph.Renderer.Raphael('quest5d', g, width, height);
 	
 //END TASK5
 
@@ -299,7 +353,6 @@ function TaskSet() {
 
 function processqzGrzfok() {
     document.bgColor = '#ffff88'
-    var numberOfQuestions = 4;
 	var goodguyszGrzfok = 0;
     // used to calculate score
     var inhibitzGrzfok = 0;
@@ -333,7 +386,7 @@ function killall() {
     //keep final scores from hanging around after reset clears form
     goodguys = 0;
     inhibitaa = 0;
-    for (i = 0; i <= 50; i++) {
+    for (i = 0; i <= numberOfQuestions; i++) {
         stuff[i] = 0;
         answered[i] = 0
     };
