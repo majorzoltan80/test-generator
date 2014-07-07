@@ -1,3 +1,11 @@
+/**
+dependencies: 
+sylvester.js - matrix and vector API: http://sylvester.jcoglan.com/
+dracula_graph.js and dracula_graffle.js - http://www.graphdracula.net/
+jquery-1.4.2.min.js
+Curry-1.0.1.js
+*/
+
 var numberOfQuestions = 5;
 var stuff = new Array(numberOfQuestions)
 // maximum number of questions

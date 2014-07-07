@@ -7,14 +7,14 @@ body {
     padding: 10px 10px 10px 10px;
     max-width:9in;
     margin:auto;
-	background-color:#AEFDA4;
+
 }
 h1 {
     font-size:20pt;
 }
 h2 {
     font-size:18pt;
-	font-color:#922449;
+	color:#922449;
 	text-align: center;
 }
 h3 {
@@ -24,7 +24,7 @@ h3 {
     position: relative;
     top: -100px;
 }
-.wrapper {
+#wrapper {
     background-color:#FFFFEB;
     width:800px;
     padding: 5px;
@@ -46,4 +46,7 @@ h3 {
 
 .Warning{
 	color:red;
+}
+html{
+    background-color: #008040;
 }
