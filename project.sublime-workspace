@@ -4,61 +4,17 @@
 		"selected_items":
 		[
 			[
-				"d",
-				"d"
+				"h",
+				"h2	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "js/arithmetic_series_control.js",
-			"settings":
-			{
-				"buffer_size": 968,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/graph_control.js",
-			"settings":
-			{
-				"buffer_size": 11983,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/common_control.js",
-			"settings":
-			{
-				"buffer_size": 2769,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/common.css",
-			"settings":
-			{
-				"buffer_size": 649,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pages/Arithmetic_series.html",
-			"settings":
-			{
-				"buffer_size": 8412,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pages/Graphs.html",
-			"settings":
-			{
-				"buffer_size": 8110,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -67,32 +23,28 @@
 		"selected_items":
 		[
 			[
-				"packa",
-				"Package Control: Remove Package"
+				"pack",
+				"Package Control: Disable Package"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
 			],
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
+				"Package Control: Disable Package"
 			],
 			[
 				"package",
 				"Package Control: Install Package"
 			],
 			[
-				"instal",
+				"pa",
 				"Package Control: Install Package"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"",
-				"Snippet: Lorem ipsum"
 			]
 		],
 		"width": 512.0
@@ -112,23 +64,53 @@
 	},
 	"file_history":
 	[
-		"/C/work/Git/test-generator/pages/Arithmetic_series.html",
-		"/C/work/Git/test-generator/js/common_control.js",
-		"/C/work/Git/test-generator/js/arithmetic_series_control.js",
-		"/C/work/Git/test-generator/index.html",
-		"/C/work/Git/test-generator/css/common.css",
-		"/C/work/Git/test-generator/pages/Graphs.html",
-		"/C/work/Git/test-generator/js/dracula_algorithms.js"
+		"/C/Users/Major/Documents/GitHub/test-generator/index.html",
+		"/C/Users/Major/Documents/GitHub/test-generator/pages/info/info_index.html",
+		"/C/Users/Major/Documents/GitHub/test-generator/pages/math/Graphs.html",
+		"/C/Users/Major/Documents/GitHub/test-generator/pages/math/Arithmetic_series.html",
+		"/C/Users/Major/Documents/GitHub/test-generator/pages/Graphs.html",
+		"/C/Users/Major/Documents/GitHub/test-generator/pages/Arithmetic_series.html",
+		"/C/Users/Major/Documents/GitHub/test-generator/js/graph_control.js",
+		"/C/Users/Major/Documents/GitHub/test-generator/js/graph_control_old.js",
+		"/C/Users/Major/Documents/GitHub/test-generator/js/arithmetic_series_control.js",
+		"/C/Users/Major/Documents/GitHub/test-generator/js/geometric_series_control.js",
+		"/C/Users/Major/Desktop/Scripts/Results/LOG_CheckoutRegisteredBTQP_AllPaymentMethods",
+		"/C/Users/Major/Desktop/Scripts/log2.csv",
+		"/C/Users/Major/Desktop/Scripts/LOG_CheckoutRegisteredBTQP_AllPaymentMethods",
+		"/C/Users/Major/Desktop/Scripts/CSharpNunit_SUITE_CheckoutGuestBTQP_AllPaymentMethods",
+		"/C/Users/Major/Desktop/Scripts/SUITE_CheckoutGuestBTQP.html",
+		"/C/Users/Major/Desktop/Scripts/SUITE_CheckoutRegisteredBTQP.html",
+		"/C/Users/Major/Desktop/Scripts/log.txt",
+		"/C/Users/Major/Desktop/Scripts/SUITE_CheckoutGuestStandard.html",
+		"/C/Users/Major/Desktop/Scripts/SUITE_CheckoutRegisteredStandard.html",
+		"/C/Users/Major/Desktop/Scripts/TC_IDE/Checkout/CheckoutStep3_CC.html",
+		"/C/Users/Major/Desktop/Scripts/TC/checkoutRegisteredBTQP.html",
+		"/C/Users/Major/Desktop/Scripts/TC_IDE/Checkout/CheckoutStep2_BTQP.html",
+		"/C/Users/Major/Desktop/Scripts/SUITE_CheckoutRegisteredBTPQ.html",
+		"/C/Users/Major/Documents/GitHub/test-generator/css/common.css",
+		"/C/Users/Major/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Major/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Major/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/Major/AppData/Roaming/Sublime Text 2/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Major/Documents/GitHub/test-generator/pages/Geometric_series.html",
+		"/C/Users/Major/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Major/Documents/GitHub/test-generator/js/raphael-min.js",
+		"/C/Users/Major/Documents/GitHub/test-generator/js/seedrandom.js",
+		"/C/Users/Major/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Major/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Major/Documents/GitHub/test-generator/LICENSE",
+		"/C/Users/Major/Documents/GitHub/test-generator/README.md"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
 		"height": 0.0,
 		"where_history":
 		[
+			"C:\\Users\\Major\\Documents\\GitHub\\test-generator"
 		]
 	},
 	"find_state":
@@ -136,16 +118,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"answer6a_txt",
-			"quest06d",
-			"quest06c",
-			"quest06b",
-			"quest06a",
-			"quest1",
-			"bgColor",
-			"goodguyszGrzfok",
-			"formAnswers",
-			"formzGrzfok"
+			"h2",
+			"h3",
+			"h2",
+			"[info] echo:",
+			"echo",
+			"[info] echo:",
+			"error",
+			"CheckoutVerification",
+			"[info] echo:",
+			"echo",
+			"tr",
+			"CheckoutStep1_Guest",
+			"CheckoutStep1_Registered",
+			"CheckoutStep2_Standard",
+			"CheckoutStep1_Registered",
+			"checkoutBTRF",
+			"TC/",
+			"TC",
+			"toBag",
+			"> ",
+			">\n",
+			"\"></",
+			"Icons",
+			"\n\n\n\n\n\n",
+			"\n",
+			"\n		</h3",
+			"\n		</",
+			"\n		"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -163,192 +163,18 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "js/arithmetic_series_control.js",
-					"settings":
-					{
-						"buffer_size": 968,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								449,
-								449
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/graph_control.js",
-					"settings":
-					{
-						"buffer_size": 11983,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1888,
-								1888
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/common_control.js",
-					"settings":
-					{
-						"buffer_size": 2769,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								537,
-								537
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "css/common.css",
-					"settings":
-					{
-						"buffer_size": 649,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								640,
-								646
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "pages/Arithmetic_series.html",
-					"settings":
-					{
-						"buffer_size": 8412,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2382,
-								2382
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": false,
-							"wrap_width": 0
-						},
-						"translation.x": 140.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "pages/Graphs.html",
-					"settings":
-					{
-						"buffer_size": 8110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								385,
-								320
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -359,18 +185,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.461352657005,
 			1.0
 		],
 		"rows":
@@ -382,7 +201,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -402,9 +221,9 @@
 		"width": 0.0
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 202.0,
+	"side_bar_width": 220.0,
 	"status_bar_visible": true
 }
