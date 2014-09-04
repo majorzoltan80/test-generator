@@ -4,26 +4,12 @@ sylvester.js - matrix and vector API: http://sylvester.jcoglan.com/
 dracula_graph.js and dracula_graffle.js - http://www.graphdracula.net/
 jquery-1.4.2.min.js
 Curry-1.0.1.js
+common_control.js - contains the task generating and processing functions
 */
 
-var numberOfQuestions = 5;
-var stuff = new Array(numberOfQuestions)
-// maximum number of questions
-var answered = new Array(numberOfQuestions)
-// processing inhibitor for guessers
-for (var i = 0; i <= numberOfQuestions; i++) {
-    stuff[i] = 0;
-    answered[i] = 0
-}
 //initialize arrays//
 var graphx = new Matrix;
 var vertexnum;
-/**
-Creates a random number between min and max, max bound not included
-*/
-function randomMinMax(min, max){
-	return Math.floor((Math.random() * (max-min)) + min);;
-}
 
 function createGraph(vertexnum, linenum) {
     var linenum2 = linenum;
@@ -65,40 +51,6 @@ function getDegrees(graphx) {
     return degrees;
 }
 
-/*
-rearrange and element's childs
-paramter: id: the id of the parent element
-assumptions: the parent should have 5 childs
-rearranges the first 4 in random order, and the last one stays the same
-*/
-
-//debug
-//var parent, a;
-function rearrange(id) {
-    //get the parent elemnt by its id
-    var parent = document.getElementById(id);
-    //save the child elements to Array 'a'
-    var a = [];
-    for (i = 0; i < 5; i++) {
-        a[i] = parent.children[i];
-        //console.log(a[i]);
-    }
-    //remove childs
-    while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
-    }
-
-    //add childs again in random order
-    parent.appendChild(a[0]);
-    for (i = 1; i < 4; i++) {
-        if (Math.random() < 0.5) {
-            parent.appendChild(a[i]);
-        } else {
-            parent.insertBefore(a[i], parent.firstChild);
-        }
-    }
-    parent.appendChild(a[4]);
-}
 /**
 Create the graph with the adjacency Matrix.
 */
